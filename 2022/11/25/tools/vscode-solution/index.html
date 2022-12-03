@@ -29,7 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
 
 
 
@@ -348,8 +350,11 @@
         <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
+      
         <div class="card-content article-info">
+              
             <div class="row tag-cate">
+                <!--
                 <div class="col s7">
                     
                     <div class="article-tag">
@@ -376,7 +381,7 @@
                         
                     </div>
                     
-                </div>
+                </div> -->
             </div>
 
             <div class="post-info">
@@ -390,14 +395,44 @@
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    66
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    1 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+
+                
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/tools/" class="post-category">
+                                tools
+                            </a>
+                        
+                    </div>
+                    
             </div>
         </div>
+    
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -407,7 +442,14 @@
                 <h2 id="Error-solution"><a href="#Error-solution" class="headerlink" title="Error solution"></a>Error solution</h2><h3 id="无法加载命令文件"><a href="#无法加载命令文件" class="headerlink" title="无法加载命令文件"></a>无法加载命令文件</h3><blockquote>
 <p>无法加载文件 C:\Program Files\nodejs\node_global\npm.ps1, 因为在此系统上禁止运行脚本</p>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PS D:\QianBlog&gt; get-ExecutionPolicy</span><br><span class="line">Restricted</span><br><span class="line">PS D:\QianBlog&gt; set-ExecutionPolicy remotesigned</span><br><span class="line"></span><br><span class="line">PS D:\QianBlog&gt; get-ExecutionPolicy</span><br><span class="line">RemoteSigned</span><br><span class="line">PS D:\QianBlog&gt; npm -v</span><br><span class="line">8.19.2</span><br></pre></td></tr></table></figure>
+<pre class="language-bash" data-language="bash"><code class="language-bash">PS D:<span class="token punctuation">\</span>QianBlog<span class="token operator">&gt;</span> get-ExecutionPolicy
+Restricted
+PS D:<span class="token punctuation">\</span>QianBlog<span class="token operator">&gt;</span> set-ExecutionPolicy remotesigned
+
+PS D:<span class="token punctuation">\</span>QianBlog<span class="token operator">&gt;</span> get-ExecutionPolicy
+RemoteSigned
+PS D:<span class="token punctuation">\</span>QianBlog<span class="token operator">&gt;</span> <span class="token function">npm</span> <span class="token parameter variable">-v</span>
+<span class="token number">8.19</span>.2</code></pre>
                 
             </div>
             <hr/>
@@ -650,7 +692,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/11/29/physyoc/part/l-di-ka-er-er-yuan-un/">
+                <a href="/2022/11/29/psychology/argument/di-qia-er-shen-xin-er-yuan-lun/">
                     <div class="card-image">
                         
                         
@@ -662,7 +704,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            介绍迪卡尔的身心二元论，以及支持论证、反对论证
                         
                     </div>
                     <div class="publish-info">
@@ -673,8 +715,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/psychology/" class="post-category">
-                                    psychology
+                            <a href="/categories/psy-argument/" class="post-category">
+                                    psy-argument
                                 </a>
                             
                             
@@ -711,7 +753,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Hexo使用以及问题解决
                         
                     </div>
                     <div class="publish-info">
