@@ -1026,7 +1026,7 @@ article .article-tags .chip {
 }
 
 #artDetail .tag-cate {
-    padding-bottom: 15px;
+     /* padding-bottom: 15px;*/
 }
 
 #artDetail a {
@@ -1035,7 +1035,7 @@ article .article-tags .chip {
 }
 
 #artDetail .article-info {
-    padding: 20px 30px 1px 40px;
+    padding: 5px 10px 1px 40px;
     margin-bottom: -5px;
 }
 
@@ -1118,7 +1118,7 @@ article .article-tags .chip {
 
 @media only screen and (max-width: 601px) {
     #artDetail .article-info {
-        padding: 15px 15px 1px 15px;
+        padding: 5px 15px 1px 15px;
         margin-bottom: -5px;
     }
 }
@@ -1129,7 +1129,7 @@ article .article-tags .chip {
     }
 
     #artDetail .article-info {
-        padding: 15px 20px 0 28px;
+        padding: 5px 20px 0 28px;
         margin-bottom: -5px;
     }
 }
